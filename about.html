@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - College Club Management</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">CollegeClubs</div>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="events.html">Events</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="auth.html" class="btn btn-outline">Login</a>
+        <a href="auth.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="container hero-content">
+      <h1>About College Club Management</h1>
+      <p>Discover who we are and how we help students grow through communities and activities.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="about-section container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>
+          Our goal is to connect students with communities that share their interests. 
+          We provide a platform to organize events, manage clubs, and foster collaboration. 
+          College life is more than just academics — we make sure every student finds a place to belong.
+        </p>
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Centralized platform for club management</li>
+          <li>Easy event registration and participation tracking</li>
+          <li>Club discovery and membership management</li>
+          <li>Opportunities to learn, network, and grow</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="images/about-team.jpg" alt="Our Team">
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section container">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/team1.jpg" alt="Team Member">
+        <h3>Manu Sharma</h3>
+        <p>Project Lead</p>
+      </div>
+      <div class="team-card">
+        <img src="images/team2.jpg" alt="Team Member">
+        <h3>Maan Singh</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="images/team3.jpg" alt="Team Member">
+        <h3>Madhav Garg</h3>
+        <p>Backend Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="images/team4.jpg" alt="Team Member">
+        <h3>Jatin Kumar</h3>
+        <p>UI/UX Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 College Club Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
