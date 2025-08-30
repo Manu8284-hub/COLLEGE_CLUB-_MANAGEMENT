@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Club Management - Events</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="events.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">CollegeClubs</div>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="auth.html" class="btn btn-outline">Login</a>
+        <a href="auth.html" class="btn btn-primary">Sign Up</a>
+      </div>
+
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Explore Exciting Events</h1>
+      <p>Join upcoming activities, competitions, and meetups organized by your college clubs.</p>
+      <a href="#upcoming-events" class="btn btn-primary">See Upcoming Events</a>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS -->
+  <section id="upcoming-events" class="events-section container">
+    <h2>Upcoming Events</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="images/techfest.jpg" alt="Tech Fest">
+        <div class="event-info">
+          <h3>Annual Tech Fest</h3>
+          <p>Join us for a day full of innovation, coding, and competitions.</p>
+          <span class="event-date">📅 Oct 5, 2025</span>
+          <button class="btn btn-primary">Register</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/musicnight.jpg" alt="Music Night">
+        <div class="event-info">
+          <h3>Music Night</h3>
+          <p>A night of melodies and fun with your friends and favorite bands.</p>
+          <span class="event-date">📅 Oct 12, 2025</span>
+          <button class="btn btn-primary">Register</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/sportsday.jpg" alt="Sports Day">
+        <div class="event-info">
+          <h3>Annual Sports Day</h3>
+          <p>Show off your skills and support your house in exciting matches.</p>
+          <span class="event-date">📅 Nov 2, 2025</span>
+          <button class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST EVENTS -->
+  <section class="events-section container">
+    <h2>Past Highlights</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="images/debate.jpg" alt="Debate Competition">
+        <div class="event-info">
+          <h3>Debate Championship</h3>
+          <p>Our debate team showed incredible skill and confidence.</p>
+          <span class="event-date">📅 Sept 15, 2025</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/workshop.jpg" alt="Workshop">
+        <div class="event-info">
+          <h3>AI Workshop</h3>
+          <p>Hands-on experience in AI and Machine Learning basics.</p>
+          <span class="event-date">📅 Aug 20, 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 College Club Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
