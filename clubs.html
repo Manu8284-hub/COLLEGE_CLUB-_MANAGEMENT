@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Clubs</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="clubs.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">CollegeClubs</div>
+
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="clubs.html" class="active">Clubs</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="auth-buttons">
+        <a href="auth.html" class="btn btn-outline">Login</a>
+        <a href="auth.html" class="btn btn-primary">Sign Up</a>
+      </div>
+
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Explore College Clubs</h1>
+      <p>Join exciting student clubs, connect with peers, and make your college life more vibrant.</p>
+    </div>
+  </section>
+
+  <!-- CLUB LIST -->
+  <section class="clubs-section container">
+    <h2 class="section-title">Our Clubs</h2>
+    <div class="clubs-grid">
+      
+      <div class="club-card">
+        <img src="images/tech-club.jpg" alt="Tech Club">
+        <h3>Tech Club</h3>
+        <p>Learn coding, robotics, and tech innovations with workshops and hackathons.</p>
+        <a href="#" class="btn btn-primary">Join Now</a>
+      </div>
+
+      <div class="club-card">
+        <img src="images/cultural-club.jpg" alt="Cultural Club">
+        <h3>Cultural Club</h3>
+        <p>Celebrate diversity through art, dance, and music performances.</p>
+        <a href="#" class="btn btn-primary">Join Now</a>
+      </div>
+
+      <div class="club-card">
+        <img src="images/sports-club.jpg" alt="Sports Club">
+        <h3>Sports Club</h3>
+        <p>Play, compete, and stay active with our sports activities and tournaments.</p>
+        <a href="#" class="btn btn-primary">Join Now</a>
+      </div>
+
+      <div class="club-card">
+        <img src="images/literary-club.jpg" alt="Literary Club">
+        <h3>Literary Club</h3>
+        <p>Sharpen your writing and public speaking skills through engaging sessions.</p>
+        <a href="#" class="btn btn-primary">Join Now</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 College Club Management | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
