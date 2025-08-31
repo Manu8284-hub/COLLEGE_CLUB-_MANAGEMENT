@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Registration</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="join.css">
+</head>
+<body>
+
+  <!-- Club Cards -->
+  <div class="club-card">
+    <h3>Explore Labs</h3>
+    <p>Celebrate diversity through music, dance, and cultural events.</p>
+    <a href="#register" class="btn">Join Club</a>
+  </div>
+
+  <div class="club-card">
+    <h3>NSS</h3>
+    <p>Weekly coding challenges and hackathon prep.</p>
+    <a href="#register" class="btn">Join Club</a>
+  </div>
+
+  <!-- Registration Form Modal -->
+  <div id="register" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Club Registration</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="club">Club Name</label>
+        <select id="club" required>
+          <option value="">Select a club</option>
+          <option value="Explore Labs">Explore Labs</option>
+          <option value="NSS">NSS</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
