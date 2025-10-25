@@ -1,6 +1,3 @@
-// main.js
-
-// Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
@@ -78,27 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Join club button functionality
-    document.querySelectorAll('.btn-primary').forEach(button => {
-        if (button.textContent.includes('Join Club')) {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const clubName = this.closest('.club-card').querySelector('h3').textContent;
-                
-                // Check if user is logged in (you'll need to implement actual auth)
-                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-                
-                if (!isLoggedIn) {
-                    // Redirect to login page or show login modal
-                    window.location.href = 'auth.html?redirect=' + encodeURIComponent(window.location.pathname);
-                    return;
-                }
 
-                // Show confirmation
-                showJoinConfirmation(clubName);
-            });
-        }
-    });
 
     // Event item animations
     const eventItems = document.querySelectorAll('.event-item');
