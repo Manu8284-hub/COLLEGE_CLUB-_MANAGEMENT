@@ -116,3 +116,43 @@
     font-size: 2rem;
   }
 }
+
+/* Add these to your existing about.css */
+
+/* Smooth transitions for all interactive elements */
+.team-card, .about-image img, .nav-menu a {
+    transition: all 0.3s ease;
+}
+
+/* Loading animation */
+body:not(.loaded) {
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Enhanced focus states */
+.btn:focus, 
+.mobile-menu-btn:focus,
+.team-card:focus {
+    outline: 2px solid #9b59b6;
+    outline-offset: 2px;
+}
+
+/* Back to top button animation */
+.scroll-to-top {
+    transition: all 0.3s ease !important;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(155, 89, 182, 0.4);
+}
+
+/* Stats animation */
+.stat-number {
+    transition: all 0.3s ease;
+}
