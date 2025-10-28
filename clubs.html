@@ -87,4 +87,23 @@
 
 <script src="clubs.js"></script>
 </body>
+<script>
+fetch("http://localhost:3000/clubs")
+  .then(res => res.json())
+  .then(data => {
+    const div = document.getElementById("clubs");
+    data.forEach(c => {
+      div.innerHTML += `<h3>${c.name}</h3><p>${c.description}</p>`;
+    });
+  });
+</script>
+<script>
+const clubId = 1; // or get from URL
+fetch(`http://localhost:3000/clubs/${clubId}`)
+  .then(res => res.json())
+  .then(club => {
+    document.body.innerHTML = `<h2>${club.name}</h2><p>${club.description}</p>`;
+  });
+</script>
+
 </html>

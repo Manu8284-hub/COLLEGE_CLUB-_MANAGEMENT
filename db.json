@@ -1,0 +1,65 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "message": "Welcome to the College Club System!"
+    },
+    {
+      "id": 2,
+      "message": "Annual Fest starts next week!"
+    }
+  ],
+  "clubs": [
+    {
+      "id": 1,
+      "name": "Robotics Club",
+      "description": "Build and program robots"
+    },
+    {
+      "id": 2,
+      "name": "Drama Club",
+      "description": "Stage performances and theater"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Tech Expo",
+      "date": "2025-11-10"
+    },
+    {
+      "id": 2,
+      "title": "Drama Night",
+      "date": "2025-12-02"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "logins": [
+    {
+      "id": "43f0",
+      "email": "admin@college.com",
+      "loginTime": "10/28/2025, 12:13:53 PM"
+    },
+    {
+      "id": "c681",
+      "email": "admin@college.com",
+      "loginTime": "10/28/2025, 12:14:10 PM"
+    },
+    {
+      "id": "e3d9",
+      "email": "admin@college.com",
+      "loginTime": "10/28/2025, 12:14:38 PM"
+    },
+    {
+      "id": "4b4a",
+      "email": "admin@college.com",
+      "loginTime": "10/28/2025, 12:15:17 PM"
+    }
+  ]
+}

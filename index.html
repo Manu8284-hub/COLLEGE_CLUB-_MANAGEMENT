@@ -15,7 +15,6 @@
           <li><a href="#" class="active">Home</a></li>
           <li><a href="clubs.html">Clubs</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="#">Members</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="auth.html" class="login-btn">Login / Sign Up</a></li>
@@ -223,4 +222,15 @@
   </footer>
   <script src="index.js"></script>
 </body>
+<script>
+fetch("http://localhost:3000/announcements")
+  .then(res => res.json())
+  .then(data => {
+    const div = document.getElementById("announcements");
+    data.forEach(a => {
+      div.innerHTML += `<p>${a.message}</p>`;
+    });
+  });
+</script>
+
 </html>
